@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^2.1.0"
+  }
+}
