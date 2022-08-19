@@ -4,25 +4,64 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/public/output.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        />
     </head>
-    <body class="font-poppins">
-            <div class="grid grid-areas-layout grid-cols-layout grid-rows-layout h-screen">
-                <header class="grid-in-header bg-blue-300" >
-                    <div class="flex justify-between">
-                        <div class="ml-28 cursor-pointer">Logo</div>
-                        <ul
-                            class="flex gap-10 mr-20 uppercase cursor-pointer items-center"
+    <body
+        class="font-poppins bg-background bg-blend-darken bg-no-repeat bg-cover"
+    >
+        <div
+            class="grid grid-areas-layout grid-cols-layout grid-rows-layout h-screen"
+        >
+            <header class="grid-in-header font-semibold text-lg">
+                <div class="flex justify-between items-center mt-3.5">
+                    <div
+                        class="ml-5 cursor-pointer flex text-slate-300 items-center gap-3 md:ml-20"
+                    >
+                        <a
+                            href="#"
+                            class="flex items-center gap-3 hover:text-white"
                         >
-                            <li>Home</li>
-                            <li>Heroes</li>
-                            <li>About Me</li>
-                        </ul>
-                </header>
-    
-                <main class="grid-in-main bg-yellow-200">
-                    <h3>MAIN CONTENT</h3>
-                </main>
-            </div>
-        
+                            <img
+                                src="assets/dota2_93574.svg"
+                                class="w-16 h-16"
+                                alt="logo"
+                            />
+                            <h3 class="hidden md:flex">DOTA 2</h3>
+                        </a>
+                    </div>
+                    <ul
+                        class="hidden gap-20 mr-20 uppercase cursor-pointer items-center md:flex"
+                    >
+                        <li>
+                            <a href="#" class="text-slate-300 hover:text-white"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="text-slate-300 hover:text-white"
+                                >Heroes</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="text-slate-300 hover:text-white"
+                                >About Me</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="flex md:hidden flex-1 justify-end">
+                        <i
+                            class="text-2xl text-white mr-5 fa-solid fa-bars"
+                        ></i>
+                    </div>
+                </div>
+            </header>
+
+            <main class="grid-in-main">
+                <h3></h3>
+            </main>
+        </div>
     </body>
 </html>

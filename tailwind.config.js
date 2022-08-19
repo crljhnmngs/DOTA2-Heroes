@@ -10,10 +10,13 @@ module.exports = {
                 layout: '1fr 4fr 1fr;',
             },
             gridTemplateRows: {
-                layout: '4rem 1fr',
+                layout: '5rem 1fr',
             },
             fontFamily: {
                 poppins: ['Poppins', 'sans-serif;'],
+            },
+            backgroundImage: {
+                background: "url('../src/assets/background.png')",
             },
         },
     },
