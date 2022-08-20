@@ -17,6 +17,10 @@ module.exports = {
             },
             backgroundImage: {
                 background: "url('../src/assets/background.png')",
+                heroesbg: "url('../src/assets/bg.jpg')",
+            },
+            maxWidth: {
+                card: '16rem',
             },
         },
     },
