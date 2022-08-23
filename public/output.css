@@ -609,6 +609,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -970,6 +974,10 @@ video {
     margin-left: 4rem;
   }
 
+  .lg\:ml-10{
+    margin-left: 2.5rem;
+  }
+
   .lg\:grid{
     display: grid;
   }
@@ -994,6 +1002,26 @@ video {
 @media (max-width: 600px){
   .ns\:mb-5{
     margin-bottom: 1.25rem;
+  }
+
+  .ns\:mr-10{
+    margin-right: 2.5rem;
+  }
+
+  .ns\:mr-6{
+    margin-right: 1.5rem;
+  }
+
+  .ns\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .ns\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .ns\:mt-2{
+    margin-top: 0.5rem;
   }
 
   .ns\:flex{
@@ -1038,6 +1066,10 @@ video {
 
   .ns\:p-14{
     padding: 3.5rem;
+  }
+
+  .ns\:p-10{
+    padding: 2.5rem;
   }
 }
 
