@@ -22,6 +22,14 @@ module.exports = {
             maxWidth: {
                 card: '16rem',
             },
+            minHeight: {
+                picture: '10rem',
+            },
+            screens: {
+                ns: { raw: '(max-width: 600px)' },
+                // md: { raw: '(max-height: 768px),(min-width:641px)' },
+                // lg: { raw: '(max-height: 1024px),(min-width:769px)' },
+            },
         },
     },
     plugins: [require('@savvywombat/tailwindcss-grid-areas')],
