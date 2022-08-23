@@ -601,6 +601,14 @@ video {
   margin-right: -0.25rem;
 }
 
+.ml-3{
+  margin-left: 0.75rem;
+}
+
+.ml-1{
+  margin-left: 0.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -691,6 +699,14 @@ video {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
 }
 
 .rounded-lg{
@@ -859,6 +875,15 @@ video {
   grid-area: main;
 }
 
+.scrollbar-hide{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
+}
+
 .hover\:bg-blue-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
@@ -934,6 +959,10 @@ video {
   .md\:hidden{
     display: none;
   }
+
+  .md\:bg-cover{
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1024px){
@@ -953,14 +982,34 @@ video {
     gap: 1.5rem;
   }
 
+  .lg\:gap-2{
+    gap: 0.5rem;
+  }
+
   .lg\:p-14{
     padding: 3.5rem;
   }
 }
 
 @media (max-width: 600px){
+  .ns\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
   .ns\:flex{
     display: flex;
+  }
+
+  .ns\:grid{
+    display: grid;
+  }
+
+  .ns\:h-screen{
+    height: 100vh;
+  }
+
+  .ns\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .ns\:flex-col{
@@ -973,6 +1022,22 @@ video {
 
   .ns\:justify-center{
     justify-content: center;
+  }
+
+  .ns\:gap-3{
+    gap: 0.75rem;
+  }
+
+  .ns\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .ns\:bg-cover{
+    background-size: cover;
+  }
+
+  .ns\:p-14{
+    padding: 3.5rem;
   }
 }
 

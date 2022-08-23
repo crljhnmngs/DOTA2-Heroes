@@ -32,5 +32,8 @@ module.exports = {
             },
         },
     },
-    plugins: [require('@savvywombat/tailwindcss-grid-areas')],
+    plugins: [
+        require('@savvywombat/tailwindcss-grid-areas'),
+        require('tailwind-scrollbar-hide'),
+    ],
 };

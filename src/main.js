@@ -7,7 +7,7 @@ fetch(DOTA2_API_URL)
         let data = '';
         for (let dotaHeroes of responseJson) {
             data += `
-            <div class="max-w-card bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class="max-w-card bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-5">
                 <a href="#">
                     <img class="rounded-t-lg min-h-picture" src="https://api.opendota.com${dotaHeroes.img}" alt="" />
                 </a>
