@@ -4,3 +4,7 @@ STACK:
 HTML
 TAILWIND CSS
 VANILLA JAVASCRIPT
+
+Plugins used:
+https://www.npmjs.com/package/@savvywombat/tailwindcss-grid-areas
+https://github.com/reslear/tailwind-scrollbar-hide
