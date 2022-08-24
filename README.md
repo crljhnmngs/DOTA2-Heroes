@@ -1,4 +1,6 @@
-Fetching DOTA 2 heroes Using an API
+Fetch DOTA 2 heroes Using an API
+
+API used: https://api.opendota.com/api/heroStats
 
 STACK:
 HTML
