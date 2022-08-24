@@ -3,8 +3,8 @@ Fetch DOTA 2 heroes Using an API
 API used: https://api.opendota.com/api/heroStats
 
 STACK:
-HTML
-TAILWIND CSS
+HTML,
+TAILWIND CSS and
 VANILLA JAVASCRIPT
 
 Plugins used:
