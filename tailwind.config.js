@@ -30,6 +30,12 @@ module.exports = {
                 // md: { raw: '(max-height: 768px),(min-width:641px)' },
                 // lg: { raw: '(max-height: 1024px),(min-width:769px)' },
             },
+            height: {
+                ch: '35rem',
+            },
+            width: {
+                image: '30rem',
+            },
         },
     },
     plugins: [

@@ -9,27 +9,58 @@ async function getHeroInfo() {
         .then((response) => response.json())
         .then((responseJson) => {
             let data = '';
-            for (let dotaHeroes of responseJson) {
-                if (dotaHeroes.id == id)
-                    data += `
-            <div class="max-w-card bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-5">
-                <a href="#">
-                    <img class="rounded-t-lg min-h-picture" src="https://api.opendota.com${dotaHeroes.img}" alt="" />
-                </a>
-                <div class="p-5">
+            responseJson.map((values) => {
+                if (values.id == id)
+                    data = ` <div class="image  justify-start w-image ">
                     <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${dotaHeroes.localized_name}</h5>
-                    </a>
-                    <h6 class=" font-semibold text-white">Attack Type:</h6>
-                    <p class="mb-3 font-poppins text-gray-700 ml-14 dark:text-gray-400">${dotaHeroes.attack_type}</p>
-                    <a id="read-more" href="hero-info.html?id=${dotaHeroes.id}" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Read more
-                        <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <img class="rounded-t-lg w-full h-full" src="https://api.opendota.com${values.img}" alt="" />
                     </a>
                 </div>
-            </div>
-        `;
-            }
+
+                <div class="p-5  w-image">
+                    <a href="#" class="flex gap-2">
+                        <h5 class="mb-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${values.localized_name}</h5>
+                        <img class="h-8" src="https://api.opendota.com${values.icon}" alt="">
+                    </a>
+                        <div class="flex mt-3">
+                            <h6 class=" font-semibold text-white">Primary attribute: </h6> 
+                            <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.primary_attr}</p>
+                            </div>
+                            <div class="flex mt-3">
+                                <h6 class=" font-semibold text-white">Attack Type:</h6>
+                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.attack_type}</p>
+                            </div>
+                            <div class="flex mt-3">
+                                <h6 class=" font-semibold text-white">Roles:</h6>
+                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.roles}</p>
+                            </div>
+                            <div class="flex mt-3">
+                                <h6 class=" font-semibold text-white">Base Health:</h6>
+                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_health}</p>
+                            </div>
+                            <div class="flex mt-3">
+                                <h6 class=" font-semibold text-white">Base Health Regen:</h6>
+                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_health_regen}</p>
+                            </div>
+                            <div class="flex mt-3">
+                                <h6 class=" font-semibold text-white">Base Mana:</h6>
+                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_mana}</p>
+                            </div>
+                            <div class="flex mt-3">
+                                <h6 class=" font-semibold text-white">Base Mana regen:</h6>
+                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_mana_regen}</p>
+                            </div>
+                            <div class="flex mt-3">
+                                <h6 class=" font-semibold text-white">Base armor:</h6>
+                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_armor}</p>
+                            </div>
+                            <div class="flex mt-3">
+                                <h6 class=" font-semibold text-white">Base magic resistance:</h6>
+                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_mr}</p>
+                            </div>
+                    </div>
+                </div>`;
+            });
             document.getElementById('info-card').innerHTML = data;
         })
         .catch((err) => {
