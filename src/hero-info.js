@@ -1,13 +1,17 @@
 const DOTA2_API_URL = 'https://api.opendota.com/api/heroStats';
 
-async function getHeroes() {
+const urlValues = window.location.search;
+const urlParam = new URLSearchParams(urlValues);
+const id = urlParam.get('id');
+
+async function getHeroInfo() {
     await fetch(DOTA2_API_URL)
         .then((response) => response.json())
         .then((responseJson) => {
-            //Display Heroes Information
             let data = '';
             for (let dotaHeroes of responseJson) {
-                data += `
+                if (dotaHeroes.id == id)
+                    data += `
             <div class="max-w-card bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-5">
                 <a href="#">
                     <img class="rounded-t-lg min-h-picture" src="https://api.opendota.com${dotaHeroes.img}" alt="" />
@@ -26,10 +30,10 @@ async function getHeroes() {
             </div>
         `;
             }
-            document.getElementById('card').innerHTML = data;
+            document.getElementById('info-card').innerHTML = data;
         })
         .catch((err) => {
             console.log(err);
         });
 }
-getHeroes();
+getHeroInfo();
