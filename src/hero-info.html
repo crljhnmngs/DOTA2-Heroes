@@ -54,7 +54,7 @@
                             >
                         </li>
                     </ul>
-                    <div class="flex md:hidden flex-1 justify-end">
+                    <div class="flex md:hidden flex-1 justify-end cursor-pointer">
                         <i
                             class="text-2xl text-white mr-5 fa-solid fa-bars"
                         ></i>
@@ -63,8 +63,8 @@
             </header>
 
             <main class="grid-in-main mt-9">
-                        <div class="flex justify-center overflow-y-auto h-screen scrollbar-hide">
-                        <div id="info-card" class="ns:max-w-sm flex h-ch  justify-center w-infocard cardInfo:flex-col cardInfo:h-hc cardInfo:w-infocardmdscreen bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-5">
+                        <div class="flex flex-col items-center overflow-y-auto cardInfo:h-screen scrollbar-hide">
+                        <div id="info-card" class="ns:max-w-sm flex h-ch  justify-center w-infocard cardInfo:flex-col cardInfo:h-hc cardInfo:w-infocardmdscreen bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-3">
                             <!-- <div class="image  justify-start w-image ">
                                 <a href="#">
                                     <img class="rounded-t-lg w-full h-full" src="https://api.opendota.com/apps/dota2/images/dota_react/heroes/antimage.png?" alt="" />
@@ -114,6 +114,12 @@
                                         </div>
                                 </div>
                             </div> -->
+                        </div>
+                        <div class="flex justify-center items-center mb-2">
+                            <a id="back-button" href="#" class="inline-flex items-center py-2 px-4 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                                <svg aria-hidden="true" class="mr-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                                Back
+                            </a>
                         </div>
                     </div>
             </main>

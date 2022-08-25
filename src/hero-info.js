@@ -71,3 +71,9 @@ async function getHeroInfo() {
         });
 }
 getHeroInfo();
+
+const backButton = document.getElementById('back-button');
+
+backButton.onclick = function () {
+    location.href = 'heroes.html';
+};
