@@ -10,10 +10,10 @@ async function getHeroInfo() {
         .then((responseJson) => {
             let data = '';
             responseJson.map((values) => {
-                if (values.id == id)
-                    data = ` <div class="image  justify-start w-image ">
+                if (values.id == id) {
+                    data = ` <div class="image w-image cardInfo:h-60  cardInfo:w-full">
                     <a href="#">
-                        <img class="rounded-t-lg w-full h-full" src="https://api.opendota.com${values.img}" alt="" />
+                        <img class="rounded-t-lg w-full h-full cardInfo:rounded-t-lg" src="https://api.opendota.com${values.img}" alt="" />
                     </a>
                 </div>
 
@@ -60,6 +60,9 @@ async function getHeroInfo() {
                             </div>
                     </div>
                 </div>`;
+                } else if (id == null) {
+                    location.href = 'heroes.html';
+                }
             });
             document.getElementById('info-card').innerHTML = data;
         })

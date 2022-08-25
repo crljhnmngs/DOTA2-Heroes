@@ -577,14 +577,6 @@ video {
   margin-top: 2.25rem;
 }
 
-.ml-80{
-  margin-left: 20rem;
-}
-
-.mr-80{
-  margin-right: 20rem;
-}
-
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -663,6 +655,10 @@ video {
 
 .w-16{
   width: 4rem;
+}
+
+.w-infocard{
+  width: 50rem;
 }
 
 .w-image{
@@ -1028,8 +1024,76 @@ video {
     margin-top: 0.5rem;
   }
 
+  .ns\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .ns\:mt-40{
+    margin-top: 10rem;
+  }
+
+  .ns\:mr-2{
+    margin-right: 0.5rem;
+  }
+
+  .ns\:ml-2{
+    margin-left: 0.5rem;
+  }
+
+  .ns\:mr-10{
+    margin-right: 2.5rem;
+  }
+
+  .ns\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .ns\:mr-20{
+    margin-right: 5rem;
+  }
+
+  .ns\:ml-20{
+    margin-left: 5rem;
+  }
+
+  .ns\:mr-40{
+    margin-right: 10rem;
+  }
+
+  .ns\:ml-40{
+    margin-left: 10rem;
+  }
+
   .ns\:grid{
     display: grid;
+  }
+
+  .ns\:h-2{
+    height: 0.5rem;
+  }
+
+  .ns\:w-96{
+    width: 24rem;
+  }
+
+  .ns\:w-10{
+    width: 2.5rem;
+  }
+
+  .ns\:w-24{
+    width: 6rem;
+  }
+
+  .ns\:w-60{
+    width: 15rem;
+  }
+
+  .ns\:max-w-md{
+    max-width: 28rem;
+  }
+
+  .ns\:max-w-sm{
+    max-width: 24rem;
   }
 
   .ns\:grid-cols-1{
@@ -1050,6 +1114,33 @@ video {
 
   .ns\:p-10{
     padding: 2.5rem;
+  }
+}
+
+@media (max-width: 850px){
+  .cardInfo\:h-hc{
+    height: 47.5rem;
+  }
+
+  .cardInfo\:h-60{
+    height: 15rem;
+  }
+
+  .cardInfo\:w-infocardmdscreen{
+    width: 35rem;
+  }
+
+  .cardInfo\:w-full{
+    width: 100%;
+  }
+
+  .cardInfo\:flex-col{
+    flex-direction: column;
+  }
+
+  .cardInfo\:rounded-t-lg{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
   }
 }
 
