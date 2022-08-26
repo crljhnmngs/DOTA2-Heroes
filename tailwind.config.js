@@ -28,6 +28,7 @@ module.exports = {
             screens: {
                 ns: { raw: '(max-width: 600px)' },
                 cardInfo: { raw: '(max-width: 850px)' },
+                ssm: { raw: '(max-width: 360px)' },
                 // md: { raw: '(max-height: 768px),(min-width:641px)' },
                 // lg: { raw: '(max-height: 1024px),(min-width:769px)' },
             },
