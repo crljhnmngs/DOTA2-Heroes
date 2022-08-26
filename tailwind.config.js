@@ -27,7 +27,7 @@ module.exports = {
                 picture: '10rem',
             },
             screens: {
-                ns: { raw: '(max-width: 600px)' },
+                ns: { raw: '(max-width: 640px)' },
                 cardInfo: { raw: '(max-width: 850px)' },
                 ssm: { raw: '(max-width: 360px)' },
                 // md: { raw: '(max-height: 768px),(min-width:641px)' },
@@ -36,6 +36,7 @@ module.exports = {
             height: {
                 ch: '35rem',
                 hc: '47.5rem',
+                card: '350px',
             },
             width: {
                 image: '30rem',

@@ -19,44 +19,44 @@ async function getHeroInfo() {
 
                 <div class="p-5  w-image">
                     <a href="#" class="flex gap-2">
-                        <h5 class="mb-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${values.localized_name}</h5>
+                        <h5 class="mb-5 text-2xl font-bold tracking-tight text-white">${values.localized_name}</h5>
                         <img class="h-8" src="https://api.opendota.com${values.icon}" alt="">
                     </a>
                         <div class="flex mt-3">
                             <h6 class=" font-semibold text-white">Primary attribute: </h6> 
-                            <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.primary_attr}</p>
+                            <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.primary_attr}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Attack Type:</h6>
-                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.attack_type}</p>
+                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.attack_type}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Roles:</h6>
-                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.roles}</p>
+                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.roles}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Base Health:</h6>
-                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_health}</p>
+                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.base_health}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Base Health Regen:</h6>
-                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_health_regen}</p>
+                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.base_health_regen}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Base Mana:</h6>
-                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_mana}</p>
+                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.base_mana}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Base Mana regen:</h6>
-                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_mana_regen}</p>
+                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.base_mana_regen}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Base armor:</h6>
-                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_armor}</p>
+                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.base_armor}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Base magic resistance:</h6>
-                                <p class="mb-3 font-poppins text-gray-700 ml-2 dark:text-gray-400">${values.base_mr}</p>
+                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.base_mr}</p>
                             </div>
                     </div>
                 </div>`;
