@@ -1,4 +1,5 @@
 Fetch DOTA 2 heroes Using an API
+Fully responsive website
 
 API used: https://api.opendota.com/api/heroStats
 
@@ -10,3 +11,6 @@ VANILLA JAVASCRIPT
 Plugins used:
 https://www.npmjs.com/package/@savvywombat/tailwindcss-grid-areas,
 https://github.com/reslear/tailwind-scrollbar-hide
+
+Library used: 
+https://flowbite.com/docs/getting-started/introduction/
