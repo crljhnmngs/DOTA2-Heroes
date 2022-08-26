@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/**/*.{html,js}'],
+    content: ['./src/**/*.{html,js}', './node_modules/flowbite/**/*.js'],
+
     theme: {
         extend: {
             gridTemplateAreas: {
@@ -46,5 +47,6 @@ module.exports = {
     plugins: [
         require('@savvywombat/tailwindcss-grid-areas'),
         require('tailwind-scrollbar-hide'),
+        require('flowbite/plugin'),
     ],
 };
