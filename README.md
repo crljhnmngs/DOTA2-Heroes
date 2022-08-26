@@ -1,5 +1,6 @@
 Fetch DOTA 2 heroes Using an API
-Fully responsive website
+
+Fully responsive
 
 API used: https://api.opendota.com/api/heroStats
 
