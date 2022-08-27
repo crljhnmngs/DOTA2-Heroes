@@ -2,7 +2,7 @@ Fetch DOTA 2 heroes Using an API
 
 Fully responsive
 
-Live Preview: https://6309de46f367e9000869ade5--dota2heroess.netlify.app/
+Live Preview: https://crljhnmngs.github.io/DOTA2-Heroes/
 
 API used: https://api.opendota.com/api/heroStats
 
@@ -15,7 +15,5 @@ Plugins used:
 https://www.npmjs.com/package/@savvywombat/tailwindcss-grid-areas,
 https://github.com/reslear/tailwind-scrollbar-hide
 
-Library used: 
+Library used:
 https://flowbite.com/docs/getting-started/introduction/
-
-
