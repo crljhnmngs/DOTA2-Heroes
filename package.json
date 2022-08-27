@@ -6,8 +6,5 @@
   },
   "devDependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^2.1.0"
-  },
-  "scripts": {
-    "start": "start"
   }
 }
