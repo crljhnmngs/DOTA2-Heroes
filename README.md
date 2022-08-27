@@ -9,7 +9,7 @@ API used: https://api.opendota.com/api/heroStats
 STACK:
 HTML,
 TAILWIND CSS and
-VANILLA JAVASCRIPT
+JAVASCRIPT
 
 Plugins used:
 https://www.npmjs.com/package/@savvywombat/tailwindcss-grid-areas,
