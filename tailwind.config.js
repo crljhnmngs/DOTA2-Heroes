@@ -18,6 +18,7 @@ module.exports = {
             },
             backgroundImage: {
                 background: "url('../src/assets/background.png')",
+                indexbg: "url('../src/assets/background.png')",
                 heroesbg: "url('../src/assets/bg.jpg')",
             },
             maxWidth: {
@@ -30,6 +31,8 @@ module.exports = {
                 ns: { raw: '(max-width: 640px)' },
                 cardInfo: { raw: '(max-width: 850px)' },
                 ssm: { raw: '(max-width: 360px)' },
+                sm400px: { raw: '(max-width: 400px)' },
+                sm400pxmin: { raw: '(min-width: 401px)' },
                 // md: { raw: '(max-height: 768px),(min-width:641px)' },
                 // lg: { raw: '(max-height: 1024px),(min-width:769px)' },
             },

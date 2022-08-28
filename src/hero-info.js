@@ -17,12 +17,12 @@ async function getHeroInfo() {
                     </a>
                 </div>
 
-                <div class="p-5  w-image">
+                <div class="p-2 sm400pxmin:p-5  w-image">
                     <a href="#" class="flex gap-2">
                         <h5 class="mb-5 text-2xl font-bold tracking-tight text-white">${values.localized_name}</h5>
                         <img class="h-8" src="https://api.opendota.com${values.icon}" alt="">
                     </a>
-                        <div class="flex mt-3">
+                        <div class="flex flex-wrap mt-3">
                             <h6 class=" font-semibold text-white">Primary attribute: </h6> 
                             <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.primary_attr}</p>
                             </div>
@@ -30,9 +30,9 @@ async function getHeroInfo() {
                                 <h6 class=" font-semibold text-white">Attack Type:</h6>
                                 <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.attack_type}</p>
                             </div>
-                            <div class="flex mt-3">
+                            <div class="flex sm400px:flex-col mt-3">
                                 <h6 class=" font-semibold text-white">Roles:</h6>
-                                <p class="mb-3 font-poppins  ml-2 text-gray-400">${values.roles}</p>
+                                <p class=" mb-3 font-poppins sm400pxmin:ml-2 text-gray-400">${values.roles}</p>
                             </div>
                             <div class="flex mt-3">
                                 <h6 class=" font-semibold text-white">Base Health:</h6>
