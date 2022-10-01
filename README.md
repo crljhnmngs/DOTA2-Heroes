@@ -4,7 +4,7 @@ Fully responsive
 
 Live Preview: https://crljhnmngs.github.io/DOTA2-Heroes/
 
-API used: https://api.opendota.com/api/heroStats
+API endpoint used: https://api.opendota.com/api/heroStats
 
 STACK:
 HTML,
